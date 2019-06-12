@@ -6,19 +6,22 @@ exports.config = {
 		'./src/features/**/*.feature'
 	],
 	capabilities: {
-		'browserName': 'chrome'
+		'browserName': 'chrome',
+		sharedTestFiles: true
 	},
 	directConnect: true,
 	baseUrl: 'http://localhost:4200/',
 	framework: 'custom',	// set to custom instead of cucumber
 	frameworkPath: require.resolve('protractor-cucumber-framework'),
 	cucumberOpts: {
+		'no-colors': true,
 		monochrome: true,
 		strict: true,	// <boolean> fail if there are any undefined or pending steps
 		dryRun: false,	// <boolean> invoke formatters without executing steps
 		require: ['./src/steps/**/*.steps.ts'],
 		tags: [],		// <string[]> (expression) only execute the features or scenarios with tags matching the expression
-		format: []	// format results e.g. ['json']
+		format: ['progress', 'json:results.json'],	// format results e.g. ['json']
+
 	},
 	onPrepare() {
 		browser.manage().window().maximize();	// maximize the browser

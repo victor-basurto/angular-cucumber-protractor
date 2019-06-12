@@ -5,5 +5,6 @@ Feature: Go to the home
 		Given I am on the home page
 		When I do nothing
 		Then I should see the title
-		# TODO:
+		# TODO: add more tests
 		# 	Then I should see a table with a length of at least 6 items
+		#	Enable Tags
