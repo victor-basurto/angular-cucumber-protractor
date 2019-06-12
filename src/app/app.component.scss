@@ -1,0 +1,17 @@
+main {
+	.main-section {
+		justify-content: center;
+		margin: 25px 0;
+	
+		img { justify-self: center; }
+	}
+	
+	.table-data {
+		table { 
+			width: 80%; 
+			margin: auto; 
+		}
+	}
+	
+	.container .btn { margin-right: 20px; }
+}

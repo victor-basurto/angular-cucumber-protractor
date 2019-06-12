@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+body, html {
+	padding: 0;
+	margin: 0;
+}
+.mt50 { margin-top: 50px !important; }
+.mt100 { margin-top: 100px !important; }
+.grid { display: grid; }
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 80%;
+		margin: auto;
+	}
+}
